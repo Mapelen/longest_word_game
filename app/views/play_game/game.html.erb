@@ -1,0 +1,16 @@
+<h1>Let's play!</h1>
+<p>Here are your letters:</p>
+<%= @guess %>
+
+<h1>What's your word?</h1>
+
+<form action="/score">
+  <label for="question">Your word:</label>
+  <input type="text" id="question" name="query" placeholder="Type it here">
+  <input type="hidden" value = '<%= @guess%>' name ="grid" >
+  <input type="submit" value="Calculation">
+</form>
+
+
+
+
